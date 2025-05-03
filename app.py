@@ -12,6 +12,7 @@ with st.form("user_info_form"):
     
     # New fields
     pincode = st.text_input("Enter your pincode", max_chars=6)
+    phone_number = st.text_input("Enter your phone number", max_chars=10, help="Enter 10-digit mobile number")
     hobbies = st.multiselect(
         "Select your hobbies",
         ["Reading", "Sports", "Music", "Cooking", "Travel", "Photography", "Gaming", "Art", "Dancing", "Other"]
@@ -27,6 +28,7 @@ with st.form("user_info_form"):
         st.write(f"**Age:** {age}")
         st.write(f"**Gender:** {gender}")
         st.write(f"**Pincode:** {pincode}")
+        st.write(f"**Phone Number:** {phone_number}")
         st.write("**Hobbies:**")
         for hobby in hobbies:
             st.write(f"- {hobby}")
