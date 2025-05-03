@@ -33,3 +33,5 @@ with st.form("user_info_form"):
         for hobby in hobbies:
             st.write(f"- {hobby}")
 
+
+
